@@ -28,7 +28,7 @@ function Board({xIsNext, squares, onPlay}) {
     status = "Next player: " + (xIsNext? "X": "O");
   }
   function squareMaker(){
-    let boardRowsArr = [];
+    const boardRowsArr = [];
     for(let i = 0; i <= 8; i++){
         if(i % 3 === 0){
           boardRowsArr.push(
